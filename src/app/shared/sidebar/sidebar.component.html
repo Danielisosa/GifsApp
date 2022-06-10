@@ -1,0 +1,14 @@
+<!-- sidebar -->
+<div class="bg-dark border-right p-3" id="sidebar">
+  <div class="bg-7">
+    <h1 class="text-light fw-bold t-stroke">Gifs-App</h1>
+  </div>
+  <hr class="text-white">
+  <h5 class="text-light">Ultimas busquedas</h5>
+  <div class=" list-group list-reset">
+    <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action" (click)="buscar(item)">{{
+      item | titlecase }}
+    </a>
+  </div>
+</div>
+<!-- fin sidebar -->
